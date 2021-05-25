@@ -70,14 +70,20 @@ public class Car {
 
         engine.refuel(5);
 
-        System.out.println("This car is " + nameOfCar);
+        outputCarName(nameOfCar);
+
+           }
+
+    public void outputCarName(String carName){
+        this.nameOfCar = carName;
+        System.out.println("This car is " + carName);
     }
 
     public static void main(String[] args) {
         Car car = new Car("Cadilac", "Passenger car", 3.6,
                 "Long", new Engine("L764J8", 345, 2.2));
 
-        car.wheel.changeWheel("Back right wheel", 5.2);
+            car.wheel.changeWheel("Back right wheel", 5.2);
 
     }
 }
