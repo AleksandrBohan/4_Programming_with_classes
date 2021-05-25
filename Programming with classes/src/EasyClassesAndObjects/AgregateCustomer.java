@@ -63,7 +63,8 @@ public class AgregateCustomer extends Customer{
         customer.addPatronymic(index, "Viktorovich");
         customer.addAddress(index, "st.Velichko, 7A");
         customer.addNumberOfCard(index, 123456);
-        //TODO заполнить массивы и написать методы на сортировку по параметрам!!
+        //TODO заполнить массивы и написать методы на сортировку по параметрам!! Прочитать внимательно условие и переделать!!
+
 
     }
 

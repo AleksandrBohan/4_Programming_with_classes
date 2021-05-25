@@ -3,15 +3,12 @@ package EasyClassesAndObjects;
 import java.util.Scanner;
 
 public class ArrayBook extends Book{
-
+    Book book = new Book();
     Book [] books = new Book[5];
 
-    public ArrayBook(int index, int id, String name, String authors,
+    ArrayBook(int id, String name, String authors,
                      String publisher, int yearOfPublication,
                      int countOfPages, int price, String aBookCover) {
-
-        super(id, name, authors, publisher, yearOfPublication,
-                countOfPages, price, aBookCover);
 
         setId(id);
         setName(name);
@@ -23,8 +20,12 @@ public class ArrayBook extends Book{
         setaBookCover(aBookCover);
 
 
-        books[index] = new ArrayBook(index, getId(), getName(), getAuthors(), getPublisher(),
-                getYearOfPublication(), getCountOfPages(), getPrice(), getaBookCover());
+
+    }
+
+    public void addArray(int index){
+
+
     }
 
     public  void choiceOfAuthor(String authors){
@@ -54,7 +55,7 @@ public class ArrayBook extends Book{
     public static void main(String[] args) {
         Book book = new Book(123, "Perl", "A.V. Lunn, C.V. Gunn",
                 "Rise", 2004, 1000, 100, "dflk");
-        ArrayBook arrayBook = new ArrayBook(0, 123, "Perl", "A.V. Lunn, C.V. Gunn",
+      /*  ArrayBook arrayBook = new ArrayBook(0, 123, "Perl", "A.V. Lunn, C.V. Gunn",
                 "Rise", 2004, 1000, 100, "dflk");
 
 
@@ -73,7 +74,8 @@ public class ArrayBook extends Book{
         ArrayBook arrayBook4 = new ArrayBook(4, 444, "Java", "B.Ackel",
                 "HotSide", 2019, 1300, 105, "imao");
 
-        arrayBook.choiceOfPublisher("HotSide");
+        arrayBook.choiceOfPublisher("HotSide");*/
+        //TODO разобраться какой конструктор для заполнения массива Book!!
 
     }
 }

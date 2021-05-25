@@ -24,6 +24,9 @@ public class Book {
         this.aBookCover = aBookCover;
     }
 
+    public Book() {
+    }
+
     public int getId() {
         return id;
     }
