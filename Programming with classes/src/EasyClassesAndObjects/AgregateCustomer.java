@@ -71,7 +71,7 @@ public class AgregateCustomer extends Customer{
 
     public static void main(String[] args) {
 
-        agregateCustomer.countOfPersons = 10;
+    //    agregateCustomer.countOfPersons = 10;
 
     }
 }
