@@ -7,7 +7,7 @@ import java.util.Scanner;
 class Customer{
     private String nameOfCustomer;
     Account account;
-    Customer(Account anyAccount, String nameOfCustomer){
+    Customer(Account anyAccount, String nameOfCustomer, int [] array){
         this.account = anyAccount;
         this.nameOfCustomer = nameOfCustomer;
     }
@@ -16,15 +16,16 @@ class Customer{
 
 public class Account {
 
+    private int moneyOnAccount;
 private int [] arrayForAccounts;
 private int numberOfAccount;
 private ArrayList<Object> list = new ArrayList<Object>();
 
-    Account(int countOfAccounts){
-    countOfAccount(countOfAccounts);
+    Account(int countOfAccounts, int moneyOnAccount){
+    countOfAccount(countOfAccounts, moneyOnAccount);
 }
 
-public void countOfAccount(int count){
+public void countOfAccount(int count, int moneyOnAccount){
     arrayForAccounts = new int[count];
         for (int i = 0; i < count; i++){
         Scanner scanner = new Scanner(System.in);
@@ -39,14 +40,11 @@ public void countOfAccount(int count){
     public void lockAccount( int numberOfAccount, Customer customer){
 
     for (int i = 0; i < customer.account.list.size(); i++){
-       String elementOfCollection = list.get(i).toString();
+       list.contains(numberOfAccount);
        char [] symbolsOfAccountNumber = String.valueOf(numberOfAccount).toCharArray();
-        char [] elementsOfCollectionElement = elementOfCollection.toCharArray();
-        for (int j = 0; j < elementsOfCollectionElement.length; j++){
 
-        }
     }
         System.out.println("Account  " + numberOfAccount + "  was blocked!");
-
+//TODO
     }
 }
