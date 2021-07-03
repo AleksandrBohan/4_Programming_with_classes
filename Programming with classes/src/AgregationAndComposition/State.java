@@ -7,13 +7,13 @@ class City{
     boolean capital;
 
     City(String nameOfTheCity, double squareOfTheCity,
-         int countOfThePeople, boolean capital){
+         boolean capital){
 
         this.nameOfTheCity = nameOfTheCity;
         this.squareOfTheCity = squareOfTheCity;
         this.capital = capital;
 
-        if (capital = true){
+        if (this.capital == true){
            outputCapital();
         }
         nameOfTheCity();
@@ -110,10 +110,11 @@ public void countOfTheCities( Neighbourhood [] neighbourhoods){
     }
 
     public static void main(String[] args) {
-        State state = new State({new Region("Минская",
+        State state = new State(new Region[]{new Region("Минская",
                 123.4), new Region("Могилёвская", 1245.7)},
-                {new Neighbourhood("Молодечненский", 5,
-                12.9),
-                        new Neighbourhood("Воложинский", 3, 8.1)});
+                new Neighbourhood[]{new Neighbourhood("Молодечненский", 5,
+                        12.9),
+                        new Neighbourhood("Воложинский", 3, 8.1)},
+                new City[]{new City("Минск", 1.1, true), new City("Воложин", 1.3, false)});
     }
 }
